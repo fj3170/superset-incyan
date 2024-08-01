@@ -141,16 +141,16 @@ const ActionButtons = ({
       {/*>*/}
       {/*  {isVertical ? t('Apply filters') : t('Apply')}*/}
       {/*</Button>*/}
-      {/*<Button*/}
-      {/*  disabled={!isClearAllEnabled}*/}
-      {/*  buttonStyle="link"*/}
-      {/*  buttonSize="small"*/}
-      {/*  className="filter-clear-all-button"*/}
-      {/*  onClick={onClearAll}*/}
-      {/*  {...getFilterBarTestId('clear-button')}*/}
-      {/*>*/}
-      {/*  {t('Clear all')}*/}
-      {/*</Button>*/}
+      <Button
+        disabled={!isClearAllEnabled}
+        buttonStyle="link"
+        buttonSize="small"
+        className="filter-clear-all-button"
+        onClick={onClearAll}
+        {...getFilterBarTestId('clear-button')}
+      >
+        {t('Clear all')}
+      </Button>
     </div>
   );
 };
